@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="af">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kontak – Het Jan Marais Fonds</title>
+<meta name="description" content="Kontak Het Jan Marais Fonds by info@hetjan.org.">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header class="nav">
+  <div class="nav-binne">
+    <a class="nav-logo" href="index.html" aria-label="Het Jan Marais Fonds – Tuis">
+      <img src="assets/logo-groen.svg" alt="Het Jan Marais Fonds">
+    </a>
+    <button class="nav-knoppie" aria-expanded="false" aria-controls="hoofnav">Kieslys</button>
+    <ul class="nav-skakels" id="hoofnav">
+      <li><a href="index.html">Tuis</a></li>
+      <li><a href="agtergrond.html">Agtergrond</a></li>
+      <li><a href="aansoek.html">Doen aansoek</a></li>
+      <li><a href="terugvoer.html">Terugvoer</a></li>
+      <li><a href="kontak.html" aria-current="page">Kontak</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <div class="bladkop">
+    <div class="kolom-smal" style="text-align:center">
+      <span class="etiket">Kontak</span>
+      <h1>Kontak die Fonds</h1>
+    </div>
+  </div>
+
+  <section style="padding-top:0; text-align:center">
+    <div class="kolom-smal">
+      <p style="margin:0 auto 2.2rem; max-width:48ch">Alle navrae, aansoeke en terugvoerverslae word per e-pos ontvang:</p>
+      <a class="epos-groot" href="mailto:info@hetjan.org">info@hetjan.org</a>
+      <div class="ornament" style="margin-top:3.5rem">✦</div>
+    </div>
+  </section>
+
+  <section style="padding-top:0">
+    <div class="kolom-smal">
+      <div class="paneel prosa">
+        <p class="etiket" style="margin-bottom:1.2rem">Neem asseblief kennis</p>
+        <ul class="lys-bepalings">
+          <li>Dit is ’n diskresionêre trust. Geen korrespondensie of verduideliking van besluite word toegelaat nie.</li>
+          <li>Hierdie trust het geen verwantskap met Het Jan Marais Nationale Fonds nie en word ook nie deur die Universiteit Stellenbosch bestuur of geadministreer nie.</li>
+          <li>Die trust is by SAID geregistreer as openbare weldaadsorganisasie, volgens artikel 30 van die Inkomstebelastingwet van 1962, met nommer 930085957.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="voet">
+  <div class="voet-binne">
+    <div class="voet-bo">
+      <a class="voet-logo" href="index.html" aria-label="Het Jan Marais Fonds – Tuis">
+        <img src="assets/logo-room.svg" alt="Het Jan Marais Fonds">
+      </a>
+      <nav aria-label="Voetstuk">
+        <ul>
+          <li><a href="index.html">Tuis</a></li>
+          <li><a href="agtergrond.html">Agtergrond</a></li>
+          <li><a href="aansoek.html">Doen aansoek</a></li>
+          <li><a href="terugvoer.html">Terugvoer</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="voet-kontak">
+        <p>Stellenbosch · Sedert 1915<br>
+        <a href="mailto:info@hetjan.org">info@hetjan.org</a></p>
+      </div>
+    </div>
+    <div class="voet-onder">
+      <p>Openbare weldaadsorganisasie (artikel 30, Inkomstebelastingwet van 1962) · Nommer 930085957</p>
+      <p>Hierdie trust is onafhanklik van Het Jan Marais Nationale Fonds en word nie deur die Universiteit Stellenbosch bestuur of geadministreer nie.</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const knoppie = document.querySelector('.nav-knoppie');
+  knoppie.addEventListener('click', () => {
+    const oop = document.getElementById('hoofnav').classList.toggle('oop');
+    knoppie.setAttribute('aria-expanded', oop);
+  });
+</script>
+
+</body>
+</html>
