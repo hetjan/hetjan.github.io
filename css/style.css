@@ -3,6 +3,38 @@
    Diepgroen #264542 · Room #F3EFE8 · Fraunces + Montserrat
    ========================================================================== */
 
+/* ---------- Lettertipes (selfgehuisves, geen eksterne versoeke) ---------- */
+/* Fraunces & Montserrat – SIL Open Font License. Bron: Fontsource (woff2). */
+
+@font-face {
+  font-family: "Fraunces";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../assets/fonts/fraunces-latin-full-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Fraunces";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("../assets/fonts/fraunces-latin-full-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../assets/fonts/montserrat-latin-400-normal.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../assets/fonts/montserrat-latin-600-normal.woff2") format("woff2");
+}
+
 :root {
   --groen: #264542;
   --groen-diep: #1d3633;
@@ -78,9 +110,9 @@ em { font-style: italic; }
 /* klein-kaps etiket */
 .etiket {
   font-family: var(--sans);
-  font-size: 0.72rem;
+  font-size: 0.8rem;
   font-weight: 600;
-  letter-spacing: 0.28em;
+  letter-spacing: 0.26em;
   text-transform: uppercase;
   color: var(--brons);
 }

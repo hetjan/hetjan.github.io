@@ -1,0 +1,6 @@
+# Het Jan Marais Fonds – hetjan.org
+# Veiligheidskontak (RFC 9116)
+Contact: https://hetjan.org/kontak.html
+Expires: 2027-06-30T23:59:59Z
+Preferred-Languages: af, en
+Canonical: https://hetjan.org/.well-known/security.txt

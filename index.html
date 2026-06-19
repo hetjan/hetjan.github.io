@@ -3,12 +3,11 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'sha256-q1gBnV4BZHHsmtJQojjP6bshWvPiRFWjoKV7ZqUKrWg='; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'">
+<meta name="referrer" content="no-referrer">
 <title>Het Jan Marais Fonds – Tuis</title>
 <meta name="description" content="Het Jan Marais Fonds bevorder hoër onderwys in en deur middel van Afrikaans aan die Universiteit Stellenbosch – sedert 1915.">
 <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -86,9 +85,10 @@
   <!-- Waarvoor die Fonds aangewend word -->
   <section style="padding-top:0">
     <div class="kolom-smal prosa">
-      <p class="etiket">Die bemaking</p>
+      <p class="etiket">Die mandaat</p>
       <h2 style="margin-top:1rem">Waarvoor die Fonds aangewend word</h2>
-      <p>Ingevolge die testament van Jan H. Marais word die Fonds aangewend vir:</p>
+      <p>Die Fonds dien één hoofdoel: die bevordering van hoër onderwys <em>in en deur middel van Afrikaans</em> aan die Universiteit Stellenbosch, sodat Afrikaans nie ’n mindere plek as Engels inneem nie. Slegs projekte wat hierdie doel dien, kom vir befondsing in aanmerking.</p>
+      <p>Binne dié mandaat word die Fonds, ingevolge die testament van Jan H. Marais, aangewend vir:</p>
       <ol class="lys-letters">
         <li>die betaling van volle of gedeeltelike salarisse van dosente;</li>
         <li>beurse en geldelike hulp aan studente, op sodanige wyse dat die hoofdoelstelling ten beste uitgevoer word;</li>
@@ -138,7 +138,7 @@
       </nav>
       <div class="voet-kontak">
         <p>Stellenbosch · Sedert 1915<br>
-        <a href="mailto:navrae@hetjan.org">navrae@hetjan.org</a></p>
+        <a class="js-epos" data-u="navrae" data-d="hetjan.org">navrae [at] hetjan [dot] org</a></p>
       </div>
     </div>
     <div class="voet-onder">
@@ -153,6 +153,11 @@
   knoppie.addEventListener('click', () => {
     const oop = document.getElementById('hoofnav').classList.toggle('oop');
     knoppie.setAttribute('aria-expanded', oop);
+  });
+  document.querySelectorAll('.js-epos').forEach((el) => {
+    const a = el.getAttribute('data-u') + '@' + el.getAttribute('data-d');
+    el.setAttribute('href', 'mailto:' + a);
+    el.textContent = a;
   });
 </script>
 
